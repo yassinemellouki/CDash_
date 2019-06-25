@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,500,700&display=swap');
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import './sass/common/colors';
+@import './sass/common/custom';
+
+body {
+  margin: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+
+  .App {
+    // Nav Style
+    @import './sass/nav/main';
+    @import './sass/header/main';
+  }
+}

@@ -1,0 +1,48 @@
+header {
+  background-color: $main-col;
+  color: $sec-col;
+  width: 100vw;
+	padding-left: 9rem;
+  .header-title {
+    h1 {
+      margin: 0;
+      font: {
+        weight: 800;
+      }
+    }
+  }
+	.profile{
+		.profile-items{
+			height: 100%;
+			width: 12rem;
+			.notify{
+				position: relative;
+				.count{
+					position: absolute;
+					top: -.6rem;
+					right: -0.9rem;
+					background-color: red;
+					color: white;
+					text-align: center;
+					width: 1.5rem;
+					border-radius: 50%;
+					font: {
+						size: 1rem;
+						weight: bold;
+					}
+				}
+			}
+			.photo{
+				.img{
+					height: 45px;
+					width: 45px;
+					img{
+						width: 100%;
+						border-radius: 22.5px;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}
