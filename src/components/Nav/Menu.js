@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {NavLink} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
   faColumns,
@@ -12,8 +13,8 @@ class Menu extends Component {
     return (
       <div className="nav-menu">
         <ul className="list-unstyled">
-          <li className="active">
-            <a href="#top">
+          <li>
+            <NavLink exact to="/" activeClassName="active">
               <div className="list-item-icon m-auto">
                 <FontAwesomeIcon
                   icon={faColumns}
@@ -24,10 +25,10 @@ class Menu extends Component {
               <div className="list-item-text d-block text-center">
                 <span>Dashboard</span>
               </div>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#top">
+            <NavLink to="/blogs">
               <div className="list-item-icon m-auto">
                 <FontAwesomeIcon
                   icon={faNewspaper}
@@ -36,12 +37,12 @@ class Menu extends Component {
                 />
               </div>
               <div className="list-item-text d-block text-center">
-                <span>Categories</span>
+                <span>Blogs</span>
               </div>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#top">
+            <NavLink to="/categories">
               <div className="list-item-icon m-auto">
                 <FontAwesomeIcon
                   icon={faListAlt}
@@ -52,10 +53,10 @@ class Menu extends Component {
               <div className="list-item-text d-block text-center">
                 <span>Categories</span>
               </div>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#top">
+            <NavLink to="/users">
               <div className="list-item-icon m-auto">
                 <FontAwesomeIcon
                   icon={faUsers}
@@ -66,7 +67,7 @@ class Menu extends Component {
               <div className="list-item-text d-block text-center">
                 <span>Users</span>
               </div>
-            </a>
+            </NavLink>
           </li>
           <li>
             <a href="#top">

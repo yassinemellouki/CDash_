@@ -2,9 +2,9 @@ nav {
   background-color: $sec-col;
   color: white;
   min-height: 100vh;
-	position: absolute;
-	right: 0;
-	left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 7rem;
   .nav-logo {
     div {
@@ -30,12 +30,13 @@ nav {
     margin-top: 8rem;
     ul {
       li {
-				transition: background-color .2s ease-out;
-        &.active, &:hover {
-          background-color: $main-col;
-        }
+        transition: background-color 0.2s ease-out;
         a {
-					display: block;
+          &.active,
+          &:hover {
+            background-color: $main-col;
+          }
+          display: block;
           color: white;
           padding-top: 1rem;
           padding-bottom: 1rem;

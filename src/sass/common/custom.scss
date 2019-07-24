@@ -1,6 +1,29 @@
-a {
+@import './colors';
+
+body {
+  min-height: 100vh;
+  background-color: $body-bg-col;
+
+  a {
     color: inherit;
-    &:hover{
-    text-decoration: none !important;
+
+    &:hover {
+      text-decoration: none;
     }
+  }
+
+  .content {
+    width: calc(100vw - 10rem);
+
+    .container {
+      background-color: $card-bg-col;
+      border-radius: 1rem;
+
+      .dash-card {
+        padding: 0.5rem 0.3rem;
+        margin: 1.5rem auto;
+        border-bottom: 1px solid $body-bg-col;
+      }
+    }
+  }
 }
