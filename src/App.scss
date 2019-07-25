@@ -10,7 +10,7 @@ body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
 
   .App {
-    // Nav Style
+    position: relative;
     @import './sass/nav/main';
     @import './sass/header/main';
   }

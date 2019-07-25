@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Bar, Line} from 'react-chartjs-2';
+import {Bar, Line, Doughnut} from 'react-chartjs-2';
 
 class Statistics extends Component {
   render() {
@@ -8,20 +8,20 @@ class Statistics extends Component {
       datasets: [
         {
           label: 'Posts',
-          data: [8, 5, 6, 6, 8, 10],
+          data: [8, 5, 6, 6, 8],
           backgroundColor: [
-            '#478BE7C2',
-            '#478BE7C2',
-            '#478BE7C2',
-            '#478BE7C2',
-            '#478BE7C2',
+            '#2F80ED',
+            '#EB5757',
+            '#F2994A',
+            '#27AE60',
+            '#56CCF2',
           ],
           hoverBackgroundColor: [
-            '#478BE7C2',
-            '#478BE7C2',
-            '#478BE7C2',
-            '#478BE7C2',
-            '#478BE7C2',
+            '#2F80ED',
+            '#EB5757',
+            '#F2994A',
+            '#27AE60',
+            '#56CCF2',
           ],
         },
       ],
@@ -52,11 +52,11 @@ class Statistics extends Component {
       ],
     };
     return (
-      <div className="dash-card col-12 row">
+      <div className="dash-card dash-statistics col-12 row">
         <div className="col-12 pb-3">
           <h2>Statistics: </h2>
         </div>
-        <div className="col-md-6 col-sm-12 position-raltive">
+        <div className="col-lg-4 col-md-6 col-sm-12 position-raltive">
           <Bar
             data={categories_data}
             height={250}
@@ -90,7 +90,7 @@ class Statistics extends Component {
             }}
           />
         </div>
-        <div className="col-md-6 col-sm-12 position-relative">
+        <div className=" col-lg-4 col-md-6 col-sm-12 position-relative">
           <Line
             data={posts_data}
             height={250}
@@ -117,6 +117,27 @@ class Statistics extends Component {
                   },
                 ],
               },
+            }}
+          />
+        </div>
+        <div className="col-lg-4 col-md-12 col-sm-12 position-raltive mt-md-3">
+          <Doughnut
+            data={categories_data}
+            height={250}
+            options={{
+              title: {
+                display: true,
+                text: 'Posts by categories:',
+                fontFamily: 'sans-serif',
+                fontSize: 22,
+                fontStyle: 'normal',
+              },
+              cutoutPercentage: 70,
+              legend: {
+                display: true,
+              },
+              maintainAspectRatio: false,
+              responsive: true,
             }}
           />
         </div>
