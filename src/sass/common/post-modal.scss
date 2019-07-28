@@ -1,0 +1,57 @@
+.modal {
+  background-color: $modal-bg-col;
+
+  .modal-dialog {
+    top: 15%;
+    max-width: 43rem;
+
+    .modal-content {
+      border-color: $main-col;
+
+      .modal-header {
+        color: $main-col;
+
+        .close {
+          opacity: 1;
+        }
+
+        button {
+          position: absolute;
+          right: 0.5rem;
+          top: -2.7rem;
+          color: white;
+          font: {
+            size: 2.5rem;
+            weight: 300;
+          }
+        }
+
+        h5 {
+          font: {
+            size: 1.7rem;
+            weight: bold;
+          }
+        }
+
+        border: none;
+      }
+
+      .modal-body {
+        .editor-class {
+          resize: vertical;
+          height: 10rem;
+          border: 1px solid $border-col;
+          padding: 0 1rem;
+        }
+
+        .add-btn {
+          button {
+            background-color: $main-col;
+            border-radius: 0.2rem;
+            color: $card-bg-col;
+          }
+        }
+      }
+    }
+  }
+}
