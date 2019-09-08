@@ -15,7 +15,7 @@ function App() {
       <div className="App">
         <Header />
         <Nav />
-        <div className="content ml-auto">
+        <div className="content ml-auto mt-5">
           <div className="container">
             <Switch>
               <Route exact path="/" component={Home} />

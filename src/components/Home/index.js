@@ -6,7 +6,7 @@ import RecentPosts from './recent_posts';
 class Home extends Component {
   render() {
     return (
-      <div className="home row text-align-center mt-5">
+      <div className="home row text-align-center">
         <Statistics />
         <Users />
         <RecentPosts />
